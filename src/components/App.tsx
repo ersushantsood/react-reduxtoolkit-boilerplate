@@ -1,12 +1,20 @@
 import React from 'react';
+import { RootState } from '../redux/store'
+import { useSelector, useDispatch } from "react-redux"
 import logo from './logo.svg';
 import './App.css';
+import { decrement, increment, incrementByAmount } from '../redux/counterSlice'
 
 interface AppProps {
   name: String;
 }
 
 export default function App({ name }: AppProps) {
+  
+  // using selector hook to fetch value from reducer
+  const { count } = useSelector((state: RootState) => state.counter);
+  const dispatch = useDispatch()
+
   return (
     <div className="App">
       <header className="App-header">
@@ -14,14 +22,29 @@ export default function App({ name }: AppProps) {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div>
+      <div>
+        <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
         >
-          Learn React
-        </a>
+          Increment
+        </button>
+        <span>{count}</span>
+        <button
+          aria-label="Decrement value"
+          onClick={() => dispatch(decrement())}
+        >
+          Decrement
+        </button>
+        <button
+          aria-label="Decrement value"
+          onClick={() => dispatch(incrementByAmount(33))}
+        >
+          incrementByAmount
+        </button>
+      </div>
+    </div>
       </header>
     </div>
   );

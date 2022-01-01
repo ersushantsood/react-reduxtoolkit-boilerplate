@@ -1,12 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is a boilerplate code for typescript integration and redux toolkit
+This project is a boilerplate code for typescript integration and redux toolkit.
+
+## Todo : Changes yet to be done in future 
+Configure react app to run on nginx
+Configure app to be deployed in PODs , configure Helm or Kustomize.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run "npm start" or :
 
-### `yarn start`
+### `yarn start
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
