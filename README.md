@@ -6,6 +6,20 @@ This project is a boilerplate code for typescript integration and redux toolkit.
 Configure react app to run on nginx
 Configure app to be deployed in PODs , configure Helm or Kustomize.
 
+
+## React Architecture
+
+![React Architecture](./images/image.png)
+
+## Redux Toolkit 
+Redux toolkit provides helper functions which help in reducing the boilerplate required to implement redux state management
+in applications.
+
+ConfigureStore : Configures store for the Redux and this function enables reducers required in the app for state handling.
+
+CreateSlice : CreateSlice function creates required reducer funtions and these functions are added to an object which maintains the
+              list of these reducers.That object is referred as Slice.CreateSlice function automatically creates actions and action creators with the name given to reducers.Here increment,decrement and incrementByAmount are actions for incrementReducer,decrementReducer and incrementByAmountReducer
+
 ## Available Scripts
 
 In the project directory, you can run "npm start" or :
