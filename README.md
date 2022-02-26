@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project is a boilerplate code for typescript integration and redux toolkit.[Redux-Toolkit-Tutorial](https://redux-toolkit.js.org/tutorials/quick-start)
 
