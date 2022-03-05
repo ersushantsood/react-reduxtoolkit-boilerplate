@@ -1,6 +1,6 @@
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is a boilerplate code for typescript integration and redux toolkit.[Redux-Toolkit-Tutorial](https://redux-toolkit.js.org/tutorials/quick-start)
+This project is a boilerplate code for typescript integration and redux toolkit.[Redux-Toolkit-Tutorial](https://redux-toolkit.js.org/tutorials/quick-start) and provides features for redux-toolkit
 
 ## Todo : Changes yet to be done in future 
 Configure react app to run on nginx
